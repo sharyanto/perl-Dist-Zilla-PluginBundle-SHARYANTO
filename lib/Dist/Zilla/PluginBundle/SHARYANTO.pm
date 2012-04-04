@@ -17,6 +17,7 @@ sub configure {
 
     $self->add_plugins(
         'CheckChangeLog',
+        'MetaJSON',
         'ModuleBuild',
         'OurPkgVersion',
         'PodWeaver',
@@ -47,6 +48,7 @@ is equivalent to:
  remove=Readme
 
  [CheckChangeLog]
+ [MetaJSON]
  [ModuleBuild]
  [OurPkgVersion]
  [PodWeaver]
