@@ -70,4 +70,9 @@ stuffs that might change line numbers (so I also always add # ABSTRACT and POD
 at the end after '1;'). I still maintain dependencies and increase version
 number manually.
 
+I install my dists after release. I also archive them. The
+C<archive-perl-release> is a script on my computer, you can get them from my
+'scripts' github repo but the release process won't fail if the script does not
+exist.
+
 =cut
