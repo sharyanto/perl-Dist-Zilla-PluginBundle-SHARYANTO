@@ -23,7 +23,10 @@ sub configure {
         'PodWeaver',
         'ReadmeFromPod',
         'Test::Compile',
+
         'Test::Rinci',
+        'Rinci::Validate',
+
         [InstallRelease => {install_command => 'cpanm -n .'}],
         ['Run::Release' => {run => 'archive-perl-release %s'}],
     );
