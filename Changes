@@ -1,5 +1,10 @@
 Revision history for Dist-Zilla-PluginBundle-SHARYANTO
 
+0.06     2013-01-31 (SHARYANTO)
+
+         - Skip creating META.{yml,json} for private dists.
+
+
 0.05     2012-11-06 (SHARYANTO)
 
          - Add plugin: DZP::Rinci::Validate

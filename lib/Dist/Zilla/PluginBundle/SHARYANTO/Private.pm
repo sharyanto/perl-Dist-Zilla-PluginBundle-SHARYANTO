@@ -21,6 +21,8 @@ no Moose;
 1;
 # ABSTRACT: Dist::Zilla like SHARYANTO when you build your private dists
 
+=for Pod::Coverage ^(configure)$
+
 =head1 SYNOPSIS
 
  # dist.ini
