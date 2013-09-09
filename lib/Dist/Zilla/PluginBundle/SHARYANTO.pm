@@ -12,13 +12,12 @@ sub configure {
 
     $self->add_bundle(Filter => {
         -bundle => '@Classic',
-        -remove => [qw/MakeMaker PkgVersion PodVersion Readme/],
+        -remove => [qw/PkgVersion PodVersion Readme/],
     });
 
     $self->add_plugins(
         'CheckChangeLog',
         'MetaJSON',
-        'ModuleBuild',
         'OurPkgVersion',
         'PodWeaver',
         'ReadmeFromPod',
@@ -48,14 +47,12 @@ is equivalent to:
 
  [@Filter]
  bundle=@Classic
- remove=MakeMaker
  remove=PkgVersion
  remove=PodVersion
  remove=Readme
 
  [CheckChangeLog]
  [MetaJSON]
- [ModuleBuild]
  [OurPkgVersion]
  [PodWeaver]
  [ReadmeFromPod]
