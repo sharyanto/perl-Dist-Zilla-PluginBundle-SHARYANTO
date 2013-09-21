@@ -1,5 +1,11 @@
 Revision history for Dist-Zilla-PluginBundle-SHARYANTO
 
+0.09     2013-09-21 (SHARYANTO)
+
+         - Work around problem of hanging (sometimes) on Windows [GH #1].
+           Thanks, chorny.
+
+
 0.08     2013-09-09 (SHARYANTO)
 
          - No functional changes. Rebuild with MakeMaker instead of
