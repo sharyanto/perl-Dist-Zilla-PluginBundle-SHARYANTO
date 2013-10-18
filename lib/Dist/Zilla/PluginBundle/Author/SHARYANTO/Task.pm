@@ -1,4 +1,4 @@
-package Dist::Zilla::PluginBundle::SHARYANTO::Task;
+package Dist::Zilla::PluginBundle::Author::SHARYANTO::Task;
 
 use Moose;
 with 'Dist::Zilla::Role::PluginBundle::Easy';
@@ -11,7 +11,7 @@ sub configure {
     my $self = shift;
 
     $self->add_bundle(Filter => {
-        -bundle => '@SHARYANTO',
+        -bundle => '@Author::SHARYANTO',
         -remove => [qw/PodCoverageTests PodSyntaxTests PodWeaver/],
     });
 
@@ -30,12 +30,12 @@ no Moose;
 =head1 SYNOPSIS
 
  # dist.ini
- [@SHARYANTO::Task]
+ [@Author::SHARYANTO::Task]
 
 is equivalent to:
 
  [@Filter]
- bundle=@SHARYANTO
+ bundle=@Author::SHARYANTO
  remove=PodCoverageTests
  remove=PodSyntaxTests
  remove=PodWeaver

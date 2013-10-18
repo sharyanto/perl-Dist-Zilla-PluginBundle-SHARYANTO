@@ -1,4 +1,4 @@
-package Dist::Zilla::PluginBundle::SHARYANTO;
+package Dist::Zilla::PluginBundle::Author::SHARYANTO;
 
 use Moose;
 with 'Dist::Zilla::Role::PluginBundle::Easy';
@@ -41,7 +41,7 @@ no Moose;
 =head1 SYNOPSIS
 
  # dist.ini
- [@SHARYANTO]
+ [@Author::SHARYANTO]
 
 is equivalent to:
 
@@ -69,10 +69,11 @@ is equivalent to:
 
 =head1 DESCRIPTION
 
-For most dists, I use Module::Build instead of Extutils::MakeMaker. I avoid
-stuffs that might change line numbers (so I also always add # ABSTRACT and POD
-at the end after '1;'). I still maintain dependencies and increase version
-number manually.
+The gist:
+
+I avoid stuffs that might change line numbers (so I also always add # ABSTRACT
+and POD at the end after '1;'). I still maintain dependencies and increase
+version number manually.
 
 I install my dists after release. I also archive them. The
 C<archive-perl-release> is a script on my computer, you can get them from my

@@ -1,4 +1,4 @@
-package Dist::Zilla::PluginBundle::SHARYANTO::Private;
+package Dist::Zilla::PluginBundle::Author::SHARYANTO::Task::Private;
 
 use Moose;
 with 'Dist::Zilla::Role::PluginBundle::Easy';
@@ -11,7 +11,7 @@ sub configure {
     my $self = shift;
 
     $self->add_bundle(Filter => {
-        -bundle => '@SHARYANTO',
+        -bundle => '@Author::SHARYANTO::Task',
         -remove => [qw/ConfirmRelease MetaJSON MetaYAML UploadToCPAN/],
     });
 }
@@ -19,19 +19,19 @@ sub configure {
 __PACKAGE__->meta->make_immutable;
 no Moose;
 1;
-# ABSTRACT: Dist::Zilla like SHARYANTO when you build your private dists
+# ABSTRACT: Dist::Zilla like SHARYANTO when you build your private task dists
 
 =for Pod::Coverage ^(configure)$
 
 =head1 SYNOPSIS
 
  # dist.ini
- [@SHARYANTO::Private]
+ [@Author::SHARYANTO::Task::Private]
 
 is equivalent to:
 
  [@Filter]
- bundle=@SHARYANTO
+ bundle=@Author::SHARYANTO::Task
  remove=ConfirmRelease
  remove=UploadToCPAN
 
