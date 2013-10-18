@@ -71,13 +71,16 @@ is equivalent to:
 
 The gist:
 
-I avoid stuffs that might change line numbers (so I also always add # ABSTRACT
-and POD at the end after '1;'). I still maintain dependencies and increase
-version number manually.
+I avoid stuffs that might change line numbers (so OurPkgVersion instead of
+PkgVersion, etc). I also always add #ABSTRACT, #PODNAME, and POD at the end of
+file).
 
-I install my dists after release. I also archive them. The
-C<archive-perl-release> is a script on my computer, you can get them from my
-'scripts' github repo but the release process won't fail if the script does not
-exist.
+I still maintain dependencies and increase version number manually (so no
+AutoVersion and AutoPrereqs).
+
+I install my dists after release (the eat-your-own-dog-food principle). I also
+archive them using a script called C<archive-perl-release>. This is currently a
+script on my computer, you can get them from my 'scripts' github repo but this
+is optional and the release process won't fail if the script does not exist.
 
 =cut
