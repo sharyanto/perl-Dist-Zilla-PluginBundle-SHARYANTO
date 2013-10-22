@@ -1,4 +1,4 @@
-package Dist::Zilla::PluginBundle::Author::SHARYANTO::Private;
+package Dist::Zilla::PluginBundle::Author::SHARYANTO::NonCPAN;
 
 use Moose;
 with 'Dist::Zilla::Role::PluginBundle::Easy';
@@ -19,20 +19,22 @@ sub configure {
 __PACKAGE__->meta->make_immutable;
 no Moose;
 1;
-# ABSTRACT: Dist::Zilla like SHARYANTO when you build your private dists
+# ABSTRACT: Dist::Zilla like SHARYANTO when you build your non-CPAN dists
 
 =for Pod::Coverage ^(configure)$
 
 =head1 SYNOPSIS
 
  # dist.ini
- [@Author::SHARYANTO::Private]
+ [@Author::SHARYANTO::NonCPAN]
 
 is equivalent to:
 
  [@Filter]
  bundle=@Author::SHARYANTO
  remove=ConfirmRelease
+ remove=MetaJSON
+ remove=MetaYAML
  remove=UploadToCPAN
 
 

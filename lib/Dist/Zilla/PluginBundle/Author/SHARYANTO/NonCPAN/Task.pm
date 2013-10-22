@@ -1,4 +1,4 @@
-package Dist::Zilla::PluginBundle::Author::SHARYANTO::Task::Private;
+package Dist::Zilla::PluginBundle::Author::SHARYANTO::NonCPAN::Task;
 
 use Moose;
 with 'Dist::Zilla::Role::PluginBundle::Easy';
@@ -19,20 +19,22 @@ sub configure {
 __PACKAGE__->meta->make_immutable;
 no Moose;
 1;
-# ABSTRACT: Dist::Zilla like SHARYANTO when you build your private task dists
+# ABSTRACT: Dist::Zilla like SHARYANTO when you build your non-CPAN task dists
 
 =for Pod::Coverage ^(configure)$
 
 =head1 SYNOPSIS
 
  # dist.ini
- [@Author::SHARYANTO::Task::Private]
+ [@Author::SHARYANTO::NonCPAN::Task]
 
 is equivalent to:
 
  [@Filter]
  bundle=@Author::SHARYANTO::Task
  remove=ConfirmRelease
+ remove=MetaJSON
+ remove=MetaYAML
  remove=UploadToCPAN
 
 
