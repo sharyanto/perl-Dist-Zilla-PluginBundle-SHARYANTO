@@ -1,5 +1,10 @@
 Revision history for Dist-Zilla-PluginBundle-Author-SHARYANTO
 
+0.11     2013-10-22 (SHARYANTO)
+
+         - Rename ::Private to ::NonCPAN.
+
+
 0.10     2013-10-19 (SHARYANTO)
 
          - Rename dist from Dist-Zilla-PluginBundle-SHARYANTO to
