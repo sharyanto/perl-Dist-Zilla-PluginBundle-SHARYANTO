@@ -1,5 +1,10 @@
 Revision history for Dist-Zilla-PluginBundle-Author-SHARYANTO
 
+0.12     2013-11-05 (SHARYANTO)
+
+         - Add plugins: Author::SHARYANTO::MetaResources & CheckMetaResources.
+
+
 0.11     2013-10-22 (SHARYANTO)
 
          - Rename ::Private to ::NonCPAN.
