@@ -16,15 +16,16 @@ sub configure {
     });
 
     $self->add_plugins(
+        'Author::SHARYANTO::MetaResources',
         'CheckChangeLog',
+        'CheckMetaResources',
         'MetaJSON',
         'OurPkgVersion',
         'PodWeaver',
         'ReadmeFromPod',
-        'Test::Compile',
-
-        'Test::Rinci',
         'Rinci::Validate',
+        'Test::Compile',
+        'Test::Rinci',
 
         [InstallRelease => {install_command => 'cpanm -n .'}],
         ['Run::Release' => {run => 'archive-perl-release %s'}],
@@ -43,28 +44,7 @@ no Moose;
  # dist.ini
  [@Author::SHARYANTO]
 
-is equivalent to:
-
- [@Filter]
- bundle=@Classic
- remove=PkgVersion
- remove=PodVersion
- remove=Readme
-
- [CheckChangeLog]
- [MetaJSON]
- [OurPkgVersion]
- [PodWeaver]
- [ReadmeFromPod]
- [Test::Compile]
- [Test::Rinci]
-
- [InstallRelease]
- install_command=cpanm -n .
-
- [Run::Release]
- ;notexist_fatal = 0
- run=archive-perl-release %s
+is equivalent to (see source).
 
 
 =head1 DESCRIPTION
