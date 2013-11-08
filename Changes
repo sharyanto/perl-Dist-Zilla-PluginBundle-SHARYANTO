@@ -1,5 +1,13 @@
 Revision history for Dist-Zilla-PluginBundle-Author-SHARYANTO
 
+0.13     2013-11-08 (SHARYANTO)
+
+         - Add a BeforeBuild run to (re)install
+         Dist::Zilla::PluginBundle::Author::SHARYANTO and
+         Pod::Weaver::PluginBundle::Author::SHARYANTO, to help make sure we have
+         the latest plugins.
+
+
 0.12     2013-11-05 (SHARYANTO)
 
          - Add plugins: Author::SHARYANTO::MetaResources & CheckMetaResources.
