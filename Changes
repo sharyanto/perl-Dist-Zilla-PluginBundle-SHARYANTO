@@ -1,6 +1,11 @@
 Revision history for Dist-Zilla-PluginBundle-Author-SHARYANTO
 
-0.14     2013-11-11 (SHARYANTO)
+0.15     2013-11-12 (SHARYANTO)
+
+         - non-CPAN dists should still produce META.{json,yml}.
+
+
+0.14     2013-11-12 (SHARYANTO)
 
          - Add plugin: LogBuild.
 
