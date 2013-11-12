@@ -12,7 +12,7 @@ sub configure {
 
     $self->add_bundle(Filter => {
         -bundle => '@Author::SHARYANTO::Task',
-        -remove => [qw/ConfirmRelease MetaJSON MetaYAML UploadToCPAN/],
+        -remove => [qw/ConfirmRelease UploadToCPAN/],
     });
 }
 
