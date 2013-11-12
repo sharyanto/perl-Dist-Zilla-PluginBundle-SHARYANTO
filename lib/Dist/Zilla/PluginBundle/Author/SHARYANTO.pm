@@ -19,6 +19,7 @@ sub configure {
         'Author::SHARYANTO::MetaResources',
         'CheckChangeLog',
         'CheckMetaResources',
+        'LogBuild',
         'MetaJSON',
         'OurPkgVersion',
         'PodWeaver',
