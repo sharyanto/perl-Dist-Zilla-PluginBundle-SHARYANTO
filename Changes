@@ -1,5 +1,10 @@
 Revision history for Dist-Zilla-PluginBundle-Author-SHARYANTO
 
+0.14     2013-11-11 (SHARYANTO)
+
+         - Add plugin: LogBuild.
+
+
 0.13     2013-11-08 (SHARYANTO)
 
          - Add a BeforeBuild run to (re)install
