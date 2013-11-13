@@ -1,5 +1,11 @@
 Revision history for Dist-Zilla-PluginBundle-Author-SHARYANTO
 
+0.17     2013-11-13 (SHARYANTO)
+
+         - Remove MetaConfig::PodWeaver, pod weaver plugins config will be in
+           next release of PW.
+
+
 0.16     2013-11-12 (SHARYANTO)
 
          - Replace LogBuild with the more proper MetaConfig &
