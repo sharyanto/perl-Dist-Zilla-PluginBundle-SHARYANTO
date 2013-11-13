@@ -21,7 +21,6 @@ sub configure {
         'CheckMetaResources',
         'MetaJSON',
         'MetaConfig',
-        'MetaConfig::PodWeaver',
         'OurPkgVersion',
         'PodWeaver',
         'ReadmeFromPod',
