@@ -1,5 +1,10 @@
 Revision history for Dist-Zilla-PluginBundle-Author-SHARYANTO
 
+0.19     2013-12-25 (SHARYANTO)
+
+         - Fix logic bug.
+
+
 0.18     2013-12-25 (SHARYANTO)
 
          - Allow skipping updating plugin bundle by setting OFFLINE=1.
