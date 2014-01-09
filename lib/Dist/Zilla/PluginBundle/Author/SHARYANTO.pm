@@ -28,10 +28,9 @@ sub configure {
         'Test::Compile',
         'Test::Rinci',
 
-        [InstallRelease => {install_command => 'cpanm -n .'}],
         # to help make sure that I have the latest plugins
         ['Run::BeforeBuild' => {run => 'exec-if-not-env OFFLINE norepeat -p daily -- cpanm -n --reinstall Dist::Zilla::PluginBundle::Author::SHARYANTO Pod::Weaver::PluginBundle::Author::SHARYANTO'}],
-        ['Run::Release' => {run => 'archive-perl-release %s'}],
+        ['Run::Release' => {run => 'archive-perl-release %s' . ($ENV{INSTALL} // 1 ? " && cpanm %s" : "")}],
     );
 }
 
@@ -61,9 +60,10 @@ file).
 I still maintain dependencies and increase version number manually (so no
 AutoVersion and AutoPrereqs).
 
-I install my dists after release (the eat-your-own-dog-food principle). I also
-archive them using a script called C<archive-perl-release>. This is currently a
-script on my computer, you can get them from my 'scripts' github repo but this
-is optional and the release process won't fail if the script does not exist.
+I install my dists after release (the eat-your-own-dog-food principle), except
+when INSTALL=0 environment is specified. I also archive them using a script
+called C<archive-perl-release>. This is currently a script on my computer, you
+can get them from my 'scripts' github repo but this is optional and the release
+process won't fail if the script does not exist.
 
 =cut
