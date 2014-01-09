@@ -1,5 +1,10 @@
 Revision history for Dist-Zilla-PluginBundle-Author-SHARYANTO
 
+0.20     2014-01-09 (SHARYANTO)
+
+         - Do not install release when INSTALL=0.
+
+
 0.19     2013-12-25 (SHARYANTO)
 
          - Fix logic bug.
