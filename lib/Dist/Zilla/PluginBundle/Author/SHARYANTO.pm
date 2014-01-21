@@ -30,7 +30,7 @@ sub configure {
 
         # to help make sure that I have the latest plugins
         ['Run::BeforeBuild' => {run => 'exec-if-not-env OFFLINE norepeat -p daily -- cpanm -n --reinstall Dist::Zilla::PluginBundle::Author::SHARYANTO Pod::Weaver::PluginBundle::Author::SHARYANTO'}],
-        ['Run::Release' => {run => 'archive-perl-release %s' . ($ENV{INSTALL} // 1 ? " && cpanm %s" : "")}],
+        ['Run::Release' => {run => ['archive-perl-release %s', ('cpanm %s') x !!($ENV{INSTALL} // 1) ]}],
     );
 }
 
