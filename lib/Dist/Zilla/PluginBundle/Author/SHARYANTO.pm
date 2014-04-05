@@ -23,6 +23,7 @@ sub configure {
         'MetaConfig',
         'OurPkgVersion',
         'PodWeaver',
+        ['PruneFiles' => {match => ['~$']}],
         'ReadmeFromPod',
         'Rinci::Validate',
         'Test::Compile',
