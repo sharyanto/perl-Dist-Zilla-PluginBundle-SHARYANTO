@@ -21,7 +21,7 @@ sub configure {
         'CheckMetaResources',
         'MetaJSON',
         'MetaConfig',
-        'OurPkgVersion',
+        'SHARYANTO::OurPkgVersion',
         'PodWeaver',
         ['PruneFiles' => {match => ['~$']}],
         'ReadmeFromPod',
