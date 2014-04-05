@@ -1,5 +1,12 @@
 Revision history for Dist-Zilla-PluginBundle-Author-SHARYANTO
 
+0.23     2014-04-05 (SHARYANTO)
+
+         - Add PruneFiles to prune backup files (currently only /~$/). Editor
+           (emacs) temporary files (#foo#) is not removed deliberately to fail
+           the build process if they still exist.
+
+
 0.22     2014-04-01 (SHARYANTO)
 
          - Replace OurPkgVersion plugin with SHARYANTO::OurPkgVersion.
