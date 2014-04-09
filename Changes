@@ -1,5 +1,12 @@
 Revision history for Dist-Zilla-PluginBundle-Author-SHARYANTO
 
+0.24     2014-04-09 (SHARYANTO)
+
+         - Remove the Run hooks (to install latest plugins & archive release)
+           and move them to my release-perl-dist script, to make it easier for
+           other people to build & release.
+
+
 0.23     2014-04-05 (SHARYANTO)
 
          - Add PruneFiles to prune backup files (currently only /~$/). Editor
