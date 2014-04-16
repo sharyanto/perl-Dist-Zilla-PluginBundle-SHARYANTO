@@ -21,6 +21,7 @@ sub configure {
         'CheckMetaResources',
         'MetaJSON',
         'MetaConfig',
+        'OurDate',
         'PodWeaver',
         ['PruneFiles' => {match => ['~$']}],
         'ReadmeFromPod',
