@@ -21,11 +21,11 @@ sub configure {
         'CheckMetaResources',
         'MetaJSON',
         'MetaConfig',
-        'SHARYANTO::OurPkgVersion',
         'PodWeaver',
         ['PruneFiles' => {match => ['~$']}],
         'ReadmeFromPod',
         'Rinci::Validate',
+        'SHARYANTO::OurPkgVersion',
         'Test::Compile',
         'Test::Rinci',
     );
