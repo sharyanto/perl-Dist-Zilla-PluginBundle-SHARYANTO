@@ -1,5 +1,10 @@
 Revision history for Dist-Zilla-PluginBundle-Author-SHARYANTO
 
+0.25     2014-04-16 (SHARYANTO)
+
+         - Add plugin: OurDate.
+
+
 0.24     2014-04-09 (SHARYANTO)
 
          - Remove the Run hooks (to install latest plugins & archive release)
