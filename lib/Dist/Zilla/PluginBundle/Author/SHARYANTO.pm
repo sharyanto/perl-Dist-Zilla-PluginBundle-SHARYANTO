@@ -27,6 +27,7 @@ sub configure {
         'ReadmeFromPod',
         'Rinci::Validate',
         'SHARYANTO::OurPkgVersion',
+        'SetScriptShebang',
         'Test::Compile',
         'Test::Rinci',
     );
