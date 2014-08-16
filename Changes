@@ -1,5 +1,10 @@
 Revision history for Dist-Zilla-PluginBundle-Author-SHARYANTO
 
+0.26     2014-08-16 (SHARYANTO) - Happy 19th CPAN Day!
+
+         - Add plugin: SetScriptShebang.
+
+
 0.25     2014-04-16 (SHARYANTO)
 
          - Add plugin: OurDate.

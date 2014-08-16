@@ -26,8 +26,8 @@ sub configure {
         ['PruneFiles' => {match => ['~$']}],
         'ReadmeFromPod',
         'Rinci::Validate',
-        'SHARYANTO::OurPkgVersion',
         'SetScriptShebang',
+        'SHARYANTO::OurPkgVersion',
         'Test::Compile',
         'Test::Rinci',
     );
