@@ -1,4 +1,4 @@
-package Dist::Zilla::PluginBundle::Author::SHARYANTO::NonCPAN::Task;
+package Dist::Zilla::PluginBundle::Author::PERLANCAR::NonCPAN::Task;
 
 use Moose;
 with 'Dist::Zilla::Role::PluginBundle::Easy';
@@ -11,7 +11,7 @@ sub configure {
     my $self = shift;
 
     $self->add_bundle(Filter => {
-        -bundle => '@Author::SHARYANTO::Task',
+        -bundle => '@Author::PERLANCAR::Task',
         -remove => [qw/ConfirmRelease UploadToCPAN/],
     });
 }
@@ -19,19 +19,19 @@ sub configure {
 __PACKAGE__->meta->make_immutable;
 no Moose;
 1;
-# ABSTRACT: Dist::Zilla like SHARYANTO when you build your non-CPAN task dists
+# ABSTRACT: Dist::Zilla like PERLANCAR when you build your non-CPAN task dists
 
 =for Pod::Coverage ^(configure)$
 
 =head1 SYNOPSIS
 
  # dist.ini
- [@Author::SHARYANTO::NonCPAN::Task]
+ [@Author::PERLANCAR::NonCPAN::Task]
 
 is equivalent to:
 
  [@Filter]
- bundle=@Author::SHARYANTO::Task
+ bundle=@Author::PERLANCAR::Task
  remove=ConfirmRelease
  remove=MetaJSON
  remove=MetaYAML

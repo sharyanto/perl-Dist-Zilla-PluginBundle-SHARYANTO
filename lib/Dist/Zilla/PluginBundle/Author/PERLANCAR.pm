@@ -1,9 +1,10 @@
-package Dist::Zilla::PluginBundle::Author::SHARYANTO;
+package Dist::Zilla::PluginBundle::Author::PERLANCAR;
+
+# DATE
+# VERSION
 
 use Moose;
 with 'Dist::Zilla::Role::PluginBundle::Easy';
-
-# VERSION
 
 use Dist::Zilla::PluginBundle::Filter;
 
@@ -16,7 +17,7 @@ sub configure {
     });
 
     $self->add_plugins(
-        'Author::SHARYANTO::MetaResources',
+        'PERLANCAR::MetaResources',
         'CheckChangeLog',
         'CheckMetaResources',
         'MetaJSON',
@@ -27,7 +28,7 @@ sub configure {
         'ReadmeFromPod',
         'Rinci::Validate',
         'SetScriptShebang',
-        'SHARYANTO::OurPkgVersion',
+        'PERLANCAR::OurPkgVersion',
         'Test::Compile',
         'Test::Rinci',
     );
@@ -36,14 +37,14 @@ sub configure {
 __PACKAGE__->meta->make_immutable;
 no Moose;
 1;
-# ABSTRACT: Dist::Zilla like SHARYANTO when you build your dists
+# ABSTRACT: Dist::Zilla like PERLANCAR when you build your dists
 
 =for Pod::Coverage ^(configure)$
 
 =head1 SYNOPSIS
 
  # dist.ini
- [@Author::SHARYANTO]
+ [@Author::PERLANCAR]
 
 is equivalent to (see source).
 
