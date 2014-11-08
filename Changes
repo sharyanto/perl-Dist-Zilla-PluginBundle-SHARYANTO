@@ -1,5 +1,11 @@
 Revision history for Dist-Zilla-PluginBundle-Author-PERLANCAR
 
+0.28    2014-11-08 (PERLANCAR)
+
+	- Add plugin: Rinci::InstallCompletion (as well as
+	  App::BashCompletionProg).
+
+
 0.27     2014-08-16 (PERLANCAR)
 
          - Rename dist.
