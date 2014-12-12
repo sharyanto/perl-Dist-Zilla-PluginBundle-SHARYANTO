@@ -22,7 +22,7 @@ sub configure {
         'CheckMetaResources',
         'MetaJSON',
         'MetaConfig',
-        'Rinci::InstallCompletion',
+        'GenShellCompletion',
         'OurDate',
         'PodWeaver',
         ['PruneFiles' => {match => ['~$']}],
