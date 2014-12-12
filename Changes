@@ -1,5 +1,10 @@
 Revision history for Dist-Zilla-PluginBundle-Author-PERLANCAR
 
+0.29    2014-12-13 (PERLANCAR)
+
+	- Replace plugin Rinci::InstallCompletion with GenShellCompletion.
+
+
 0.28    2014-11-08 (PERLANCAR)
 
 	- Add plugin: Rinci::InstallCompletion (as well as
