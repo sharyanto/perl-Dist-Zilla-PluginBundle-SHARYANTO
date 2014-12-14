@@ -1,5 +1,12 @@
 Revision history for Dist-Zilla-PluginBundle-Author-PERLANCAR
 
+0.32    2014-12-14 (PERLANCAR)
+
+	- No functional changes.
+
+	- Derp, typo.
+
+
 0.31    2014-12-14 (PERLANCAR)
 
 	- Add plugins: PodnameFromFilename, Rinci::AbstractFromName.
