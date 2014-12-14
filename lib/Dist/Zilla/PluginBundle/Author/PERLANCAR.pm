@@ -17,7 +17,7 @@ sub configure {
     });
 
     $self->add_plugins(
-        'Rinci::AbstractFromName',
+        'Rinci::AbstractFromMeta',
         'PodnameFromFilename',
         'PERLANCAR::MetaResources',
         'CheckChangeLog',
