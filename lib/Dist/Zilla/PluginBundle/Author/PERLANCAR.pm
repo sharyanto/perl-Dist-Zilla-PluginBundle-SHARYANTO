@@ -34,6 +34,7 @@ sub configure {
         'PERLANCAR::OurPkgVersion',
         'Test::Compile',
         'Test::Rinci',
+        'PERLANCAR::GenTodoMd',
     );
 }
 
