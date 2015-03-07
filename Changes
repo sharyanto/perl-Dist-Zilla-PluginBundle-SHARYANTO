@@ -1,5 +1,10 @@
 Revision history for Dist-Zilla-PluginBundle-Author-PERLANCAR
 
+0.34    2015-03-08 (PERLANCAR)
+
+	- Add plugin: Rinci::AddPrereqs.
+
+
 0.33    2015-01-03 (PERLANCAR)
 
 	- Add plugin: PERLANCAR::GenTodoMd.
