@@ -1,5 +1,11 @@
 Revision history for Dist-Zilla-PluginBundle-Author-PERLANCAR
 
+0.35    2015-03-13 (PERLANCAR)
+
+	- Increase minimum version for
+	  Dist::Zilla::Plugin::Rinci::AddPrereqs=0.02.
+
+
 0.34    2015-03-08 (PERLANCAR)
 
 	- Add plugin: Rinci::AddPrereqs.
