@@ -35,7 +35,6 @@ sub configure {
         'SetScriptShebang',
         'Test::Compile',
         'Test::Rinci',
-        'PERLANCAR::GenTodoMd',
     );
 }
 
