@@ -35,6 +35,7 @@ sub configure {
         'SetScriptShebang',
         'Test::Compile',
         'Test::Rinci',
+        'EnsureSQLSchemaVersionedTest',
     );
 }
 
