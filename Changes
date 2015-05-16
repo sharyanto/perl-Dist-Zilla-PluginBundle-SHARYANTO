@@ -1,5 +1,10 @@
 Revision history for Dist-Zilla-PluginBundle-Author-PERLANCAR
 
+0.38    2015-05-16 (PERLANCAR)
+
+	- Add plugin: PERLANCAR::CheckDepDists.
+
+
 0.37    2015-04-22 (PERLANCAR)
 
 	- Add plugin: EnsureSQLSchemaVersionedTest.
