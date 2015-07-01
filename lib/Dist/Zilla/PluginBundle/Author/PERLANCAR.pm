@@ -27,6 +27,7 @@ sub configure {
         'MetaConfig',
         'GenShellCompletion',
         'OurDate',
+        'OurDist',
         'PERLANCAR::OurPkgVersion',
         'PodWeaver',
         ['PruneFiles' => {match => ['~$']}],
