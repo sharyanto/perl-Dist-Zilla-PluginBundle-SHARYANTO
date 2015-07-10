@@ -12,7 +12,7 @@ sub configure {
 
     $self->add_bundle(Filter => {
         -bundle => '@Author::PERLANCAR::Task',
-        -remove => [qw/ConfirmRelease UploadToCPAN/],
+        -remove => [qw/Authority ConfirmRelease UploadToCPAN/],
     });
 }
 
@@ -32,9 +32,8 @@ is equivalent to:
 
  [@Filter]
  bundle=@Author::PERLANCAR::Task
+ remove=Authority
  remove=ConfirmRelease
- remove=MetaJSON
- remove=MetaYAML
  remove=UploadToCPAN
 
 

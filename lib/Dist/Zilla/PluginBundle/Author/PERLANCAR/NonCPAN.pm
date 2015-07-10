@@ -13,7 +13,7 @@ sub configure {
 
     $self->add_bundle(Filter => {
         -bundle => '@Author::PERLANCAR',
-        -remove => [qw/ConfirmRelease UploadToCPAN/],
+        -remove => [qw/Authority ConfirmRelease UploadToCPAN/],
     });
 }
 
@@ -33,10 +33,14 @@ is equivalent to:
 
  [@Filter]
  bundle=@Author::PERLANCAR
+ remove=Authority
  remove=ConfirmRelease
- remove=MetaJSON
- remove=MetaYAML
  remove=UploadToCPAN
+
+(Authority is removed so you can conveniently use this bundle and add the
+Authority plugin separately again and set C<authority>, instead of having to
+@Filter this bundle and remove Authority only to add it later to customize the
+authority.)
 
 
 =head1 DESCRIPTION

@@ -26,6 +26,7 @@ sub configure {
         'MetaJSON',
         'MetaConfig',
         'GenShellCompletion',
+        ['Authority' => {locate_comment=>1}],
         'OurDate',
         'OurDist',
         'PERLANCAR::OurPkgVersion',
