@@ -1,5 +1,10 @@
 Revision history for Dist-Zilla-PluginBundle-Author-PERLANCAR
 
+0.40    2015-07-10 (PERLANCAR)
+
+	- Add plugin: Authority.
+
+
 0.39    2015-07-01 (PERLANCAR)
 
 	- Add plugin: OurDist.
