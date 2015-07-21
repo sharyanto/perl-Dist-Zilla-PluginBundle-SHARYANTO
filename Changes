@@ -1,5 +1,10 @@
 Revision history for Dist-Zilla-PluginBundle-Author-PERLANCAR
 
+0.41    2015-07-22 (PERLANCAR)
+
+	- Add DZB:Author::Perlancar::NoRinci.
+
+
 0.40    2015-07-10 (PERLANCAR)
 
 	- Add plugin: Authority.
