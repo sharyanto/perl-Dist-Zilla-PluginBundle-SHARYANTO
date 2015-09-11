@@ -1,5 +1,10 @@
 Revision history for Dist-Zilla-PluginBundle-Author-PERLANCAR
 
+0.42    2015-09-11 (PERLANCAR)
+
+	- Add plugin: PERLANCAR::EnsurePrereqToSpec.
+
+
 0.41    2015-07-22 (PERLANCAR)
 
 	- Add DZB:Author::Perlancar::NoRinci.
