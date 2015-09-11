@@ -20,6 +20,7 @@ sub configure {
         'Rinci::AbstractFromMeta',
         'PodnameFromFilename',
         'PERLANCAR::CheckDepDists',
+        'PERLANCAR::EnsurePrereqToSpec',
         'PERLANCAR::MetaResources',
         'CheckChangeLog',
         'CheckMetaResources',
