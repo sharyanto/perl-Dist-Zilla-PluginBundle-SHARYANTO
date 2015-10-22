@@ -1,5 +1,10 @@
 Revision history for Dist-Zilla-PluginBundle-Author-PERLANCAR
 
+0.43    2015-10-22 (PERLANCAR)
+
+	- Add plugin: Acme::CPANLists::Blacklist with my configuration.
+
+
 0.42    2015-09-11 (PERLANCAR)
 
 	- Add plugin: PERLANCAR::EnsurePrereqToSpec.
