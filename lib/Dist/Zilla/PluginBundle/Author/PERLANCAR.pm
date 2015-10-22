@@ -40,6 +40,7 @@ sub configure {
         'Test::Compile',
         'Test::Rinci',
         'EnsureSQLSchemaVersionedTest',
+        ['Acme::CPANLists::Blacklist' => {module_list=>[q[PERLANCAR::Modules I'm avoiding]]}],
     );
 }
 
