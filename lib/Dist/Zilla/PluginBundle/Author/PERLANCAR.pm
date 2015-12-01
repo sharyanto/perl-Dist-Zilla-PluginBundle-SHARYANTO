@@ -35,6 +35,7 @@ sub configure {
         ['PruneFiles' => {match => ['~$']}],
         'ReadmeFromPod',
         'Rinci::AddPrereqs',
+        'Rinci::AddToDb',
         'Rinci::Validate',
         'SetScriptShebang',
         'Test::Compile',
