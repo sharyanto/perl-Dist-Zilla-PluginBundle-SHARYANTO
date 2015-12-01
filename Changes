@@ -1,5 +1,10 @@
 Revision history for Dist-Zilla-PluginBundle-Author-PERLANCAR
 
+0.44    2015-12-01 (PERLANCAR)
+
+	- Add plugin: Rinci::AddToDb.
+
+
 0.43    2015-10-22 (PERLANCAR)
 
 	- Add plugin: Acme::CPANLists::Blacklist with my configuration.
