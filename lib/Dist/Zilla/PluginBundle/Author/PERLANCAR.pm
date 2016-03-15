@@ -19,7 +19,7 @@ sub configure {
     $self->add_plugins(
         'Rinci::AbstractFromMeta',
         'PodnameFromFilename',
-        'PERLANCAR::CheckDepDists',
+        #'PERLANCAR::CheckDepDists', # 2016-03-16 disabled because it slows down building process, i'll do this occasionally later
         'PERLANCAR::EnsurePrereqToSpec',
         'PERLANCAR::MetaResources',
         'CheckChangeLog',
