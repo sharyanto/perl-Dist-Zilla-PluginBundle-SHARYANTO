@@ -1,5 +1,11 @@
 Revision history for Dist-Zilla-PluginBundle-Author-PERLANCAR
 
+0.48    2016-03-16 (PERLANCAR)
+
+	- Remove plugin: PERLANCAR::CheckDepDists because it slows down
+	  building.
+
+
 0.47    2016-02-20 (PERLANCAR)
 
 	- Update blacklist name.
