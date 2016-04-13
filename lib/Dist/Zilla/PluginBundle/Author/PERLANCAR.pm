@@ -24,6 +24,7 @@ sub configure {
         'PERLANCAR::MetaResources',
         'CheckChangeLog',
         'CheckMetaResources',
+        'IfBuilt',
         'MetaJSON',
         'MetaConfig',
         'GenShellCompletion',
