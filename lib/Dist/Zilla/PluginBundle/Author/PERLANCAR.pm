@@ -33,7 +33,7 @@ sub configure {
         'OurDist',
         'PERLANCAR::OurPkgVersion',
         'PodWeaver',
-        ['PruneFiles' => {match => ['~$']}],
+        ['PruneFiles' => {match => ['~$', '^nytprof.*']}],
         'ReadmeFromPod',
         'Rinci::AddPrereqs',
         'Rinci::AddToDb',
