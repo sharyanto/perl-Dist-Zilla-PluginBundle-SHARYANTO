@@ -13,7 +13,7 @@ sub configure {
 
     $self->add_bundle(Filter => {
         -bundle => '@Author::PERLANCAR',
-        -remove => [qw/Authority ConfirmRelease UploadToCPAN/],
+        -remove => [qw/Authority ConfirmRelease UploadToCPAN::WWWPAUSESimple/],
     });
 }
 

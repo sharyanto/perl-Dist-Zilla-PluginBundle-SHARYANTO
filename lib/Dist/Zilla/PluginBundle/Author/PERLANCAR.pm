@@ -13,7 +13,7 @@ sub configure {
 
     $self->add_bundle(Filter => {
         -bundle => '@Classic',
-        -remove => [qw/PkgVersion PodVersion Readme/],
+        -remove => [qw/PkgVersion PodVersion Readme UploadToCPAN/],
     });
 
     $self->add_plugins(
@@ -41,6 +41,7 @@ sub configure {
         'SetScriptShebang',
         'Test::Compile',
         'Test::Rinci',
+        'UploadToCPAN::WWWPAUSESimple',
         'EnsureSQLSchemaVersionedTest',
         ['Acme::CPANLists::Blacklist' => {module_list=>[q[PERLANCAR::Avoided::Modules I'm currently avoiding]]}],
         'Prereqs::EnsureVersion',
