@@ -45,6 +45,7 @@ sub configure {
         'EnsureSQLSchemaVersionedTest',
         ['Acme::CPANLists::Blacklist' => {module_list=>[q[PERLANCAR::Avoided::Modules I'm currently avoiding]]}],
         'Prereqs::EnsureVersion',
+        'Prereqs::CheckCircular',
     );
 }
 
