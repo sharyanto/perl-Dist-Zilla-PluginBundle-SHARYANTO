@@ -1,5 +1,10 @@
 Revision history for Dist-Zilla-PluginBundle-Author-PERLANCAR
 
+0.53    2016-09-29 (PERLANCAR)
+
+	- Add plugin: Prereqs::CheckCircular.
+
+
 0.52    2016-07-13 (PERLANCAR)
 
 	- Replace UploadToCPAN with UploadToCPAN::WWWPAUSESimple.
