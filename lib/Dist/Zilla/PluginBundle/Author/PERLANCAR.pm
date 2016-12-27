@@ -17,6 +17,7 @@ sub configure {
     });
 
     $self->add_plugins(
+        'PERLANCAR::BeforeBuild',
         'Rinci::AbstractFromMeta',
         'PodnameFromFilename',
         #'PERLANCAR::CheckDepDists', # 2016-03-16 disabled because it slows down building process, i'll do this occasionally later
