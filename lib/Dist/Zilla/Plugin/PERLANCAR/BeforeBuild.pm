@@ -19,7 +19,7 @@ sub before_build {
     my $self = shift;
 
     my %min_versions = (
-        "CPAN::Meta::Prereqs" => "2.050006", # preserves x_* phases/rels
+        "CPAN::Meta::Prereqs" => "2.150006", # preserves x_* phases/rels
     );
     for (sort keys %min_versions) {
         my $min_v = $min_versions{$_};
@@ -33,6 +33,8 @@ sub before_build {
 __PACKAGE__->meta->make_immutable;
 1;
 # ABSTRACT: Do stuffs before building
+
+=for Pod::Coverage .+
 
 =head1 SYNOPSIS
 
