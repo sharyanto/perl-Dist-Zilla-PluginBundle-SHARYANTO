@@ -25,6 +25,7 @@ sub configure {
         'PERLANCAR::MetaResources',
         'CheckChangeLog',
         'CheckMetaResources',
+        'CopyrightYearFromGit',
         'IfBuilt',
         'MetaJSON',
         'MetaConfig',
