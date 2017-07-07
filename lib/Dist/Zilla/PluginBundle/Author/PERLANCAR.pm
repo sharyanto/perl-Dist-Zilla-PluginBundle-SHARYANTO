@@ -17,6 +17,7 @@ sub configure {
     });
 
     $self->add_plugins(
+        ['ExecDir' => 'ExecDir script' => {dir=>'script'}],
         'PERLANCAR::BeforeBuild',
         'Rinci::AbstractFromMeta',
         'PodnameFromFilename',
