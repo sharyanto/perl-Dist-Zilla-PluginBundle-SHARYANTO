@@ -85,4 +85,19 @@ called C<archive-perl-release>. This is currently a script on my computer, you
 can get them from my 'scripts' github repo but this is optional and the release
 process won't fail if the script does not exist.
 
+There are extra stuffs related to L<Rinci>, which should have no effect if you
+are not using any Rinci metadata in the code.
+
+There are extra stuffs related to checking prerequisites: I have a blacklist of
+prerequisites to avoid so
+L<[Acme::CPANLists::Blacklist]|Dist::Zilla::Plugin::Acme::CPANLists::Blacklist>
+will fail the build if any of the blacklisted modules are used as a prerequisite
+(unless the prerequisite is explicitly whitelisted by
+L<[Acme::CPANLists::Whitelist]|Dist::Zilla::Plugin::Acme::CPANLists::Whitelist>).
+I avoid circular dependencies using
+L<[Prereqs::CheckCircular]|Dist::Zilla::Plugin::Prereqs::CheckCircular>. And I
+also maintain a file called F<pmversions.ini> where I put minimum versions of
+some modules and check this using
+L<[Prereqs::EnsureVersion]|Dist::Zilla::Plugin::Prereqs::EnsureVersion>.
+
 =cut
