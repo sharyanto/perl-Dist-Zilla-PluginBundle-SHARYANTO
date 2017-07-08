@@ -1,3 +1,10 @@
+0.58    2017-07-08 (PERLANCAR)
+
+	- Add some documentation.
+
+	- Add [StaticInstall].
+
+
 0.57    2017-07-07 (PERLANCAR)
 
         - Add script/ as an exec dir using DZP:ExecDir.
