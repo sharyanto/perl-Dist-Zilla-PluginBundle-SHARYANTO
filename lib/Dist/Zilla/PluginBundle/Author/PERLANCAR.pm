@@ -44,11 +44,12 @@ sub configure {
         'SetScriptShebang',
         'Test::Compile',
         'Test::Rinci',
-        'UploadToCPAN::WWWPAUSESimple',
+        'StaticInstall', # by default enable static install because 99% of the time my dist is pure-perl
         'EnsureSQLSchemaVersionedTest',
         ['Acme::CPANLists::Blacklist' => {module_list=>[q[PERLANCAR::Avoided::Modules I'm currently avoiding]]}],
         'Prereqs::EnsureVersion',
         'Prereqs::CheckCircular',
+        'UploadToCPAN::WWWPAUSESimple',
     );
 }
 
