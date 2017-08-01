@@ -43,6 +43,7 @@ sub configure {
         'Rinci::Validate',
         'SetScriptShebang',
         'Test::Compile',
+        'Test::Perl::Critic',
         'Test::Rinci',
         'StaticInstall', # by default enable static install because 99% of the time my dist is pure-perl
         'EnsureSQLSchemaVersionedTest',
