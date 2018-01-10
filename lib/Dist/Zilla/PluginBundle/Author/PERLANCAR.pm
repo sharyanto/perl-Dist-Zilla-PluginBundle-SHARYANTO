@@ -47,7 +47,7 @@ sub configure {
         'Test::Rinci',
         'StaticInstall', # by default enable static install because 99% of the time my dist is pure-perl
         'EnsureSQLSchemaVersionedTest',
-        ['Acme::CPANLists::Blacklist' => {module_list=>[q[PERLANCAR::Avoided::Modules I'm currently avoiding]]}],
+        ['Acme::CPANModules::Blacklist' => {module=>[q[PERLANCAR::Avoided]]}],
         'Prereqs::EnsureVersion',
         'Prereqs::CheckCircular',
         'UploadToCPAN::WWWPAUSESimple',
@@ -91,10 +91,10 @@ are not using any Rinci metadata in the code.
 
 There are extra stuffs related to checking prerequisites: I have a blacklist of
 prerequisites to avoid so
-L<[Acme::CPANLists::Blacklist]|Dist::Zilla::Plugin::Acme::CPANLists::Blacklist>
+L<[Acme::CPANModules::Blacklist]|Dist::Zilla::Plugin::Acme::CPANModules::Blacklist>
 will fail the build if any of the blacklisted modules are used as a prerequisite
 (unless the prerequisite is explicitly whitelisted by
-L<[Acme::CPANLists::Whitelist]|Dist::Zilla::Plugin::Acme::CPANLists::Whitelist>).
+L<[Acme::CPANModules::Whitelist]|Dist::Zilla::Plugin::Acme::CPANModules::Whitelist>).
 I avoid circular dependencies using
 L<[Prereqs::CheckCircular]|Dist::Zilla::Plugin::Prereqs::CheckCircular>. And I
 also maintain a file called F<pmversions.ini> where I put minimum versions of
