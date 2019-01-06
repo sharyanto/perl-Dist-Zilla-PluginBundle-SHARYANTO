@@ -48,7 +48,7 @@ sub configure {
         'Test::Rinci',
         'StaticInstall', # by default enable static install because 99% of the time my dist is pure-perl
         'EnsureSQLSchemaVersionedTest',
-        ['Acme::CPANModules::Blacklist' => {module=>[q[PERLANCAR::Avoided]]}],
+        ['Acme::CPANModules::Blacklist' => {module=>[q[PERLANCAR::Avoided], q[PERLANCAR::Retired]]}],
         'Prereqs::EnsureVersion',
         'Prereqs::CheckCircular',
         'UploadToCPAN::WWWPAUSESimple',
