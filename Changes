@@ -1,3 +1,8 @@
+0.596   2019-04-17 (PERLANCAR)
+
+	- Derp, fix syntax.
+
+
 0.595   2019-04-17 (PERLANCAR)
 
 	- Replace PERLANCAR::OurPkgVersion with OurPkgVersion 0.15 which
