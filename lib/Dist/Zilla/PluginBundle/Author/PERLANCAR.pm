@@ -35,7 +35,7 @@ sub configure {
         ['Authority' => {locate_comment=>1}],
         'OurDate',
         'OurDist',
-        'OurPkgVersion' => {overwrite=>1},
+        ['OurPkgVersion' => {overwrite=>1}],
         'PodWeaver',
         ['PruneFiles' => {match => ['~$', '^nytprof.*']}],
         'Pod2Readme',
