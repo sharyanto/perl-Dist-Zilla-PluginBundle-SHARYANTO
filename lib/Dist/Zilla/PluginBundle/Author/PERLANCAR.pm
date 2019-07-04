@@ -41,7 +41,7 @@ sub configure {
         'Pod2Readme',
         'Rinci::AddPrereqs',
         'Rinci::AddToDb',
-        'Rinci::Validate',
+        'Rinci::EmbedValidator',
         'SetScriptShebang',
         'Test::Compile',
         'Test::Perl::Critic',
