@@ -17,6 +17,7 @@ sub configure {
     });
 
     $self->add_plugins(
+        ['FileFinder::ByName' => 'FileFinder::ByName PERLANCAR' => {dir => ['lib', 'script'], skip => ['lib/Bencher/ScenarioR/']}],
         ['ExecDir' => 'ExecDir script' => {dir=>'script'}],
         'PERLANCAR::BeforeBuild',
         'Rinci::AbstractFromMeta',
@@ -44,7 +45,7 @@ sub configure {
         'Rinci::EmbedValidator',
         'SetScriptShebang',
         'Test::Compile',
-        'Test::Perl::Critic',
+        ['Test::Perl::Critic::Subset' => {finder => ['@Author::PERLANCAR/FileFinder::ByName PERLANCAR']}],
         'Test::Rinci',
         'StaticInstall', # by default enable static install because 99% of the time my dist is pure-perl
         'EnsureSQLSchemaVersionedTest',
