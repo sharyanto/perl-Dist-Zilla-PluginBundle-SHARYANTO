@@ -32,7 +32,7 @@ sub configure {
         'MetaJSON',
         'MetaConfig',
         #'GenShellCompletion', # 2017-07-07 - disabled because i want to use DZP:StaticInstall to set x_static_install whenever possible. DZP:StaticInstall doesn't allow InstallTool plugins other than from MakeMaker and ModuleBuildTiny
-        ['Authority' => {locate_comment=>1}],
+        ['PERLANCAR::Authority' => {locate_comment=>1}],
         'OurDate',
         'OurDist',
         ['OurPkgVersion' => {overwrite=>1}],
