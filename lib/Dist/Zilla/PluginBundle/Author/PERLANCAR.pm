@@ -11,6 +11,11 @@ use Dist::Zilla::PluginBundle::Filter;
 sub configure {
     my $self = shift;
 
+    # we want these to be loaded early
+    $self->add_plugins(
+        'PERLANCAR::CheckPendingRelease', # before ConfirmRelease
+    );
+
     $self->add_bundle(Filter => {
         -bundle => '@Classic',
         -remove => [qw/PkgVersion PodVersion Readme UploadToCPAN/],
@@ -51,7 +56,6 @@ sub configure {
         ['Acme::CPANModules::Blacklist' => {module=>[q[PERLANCAR::Avoided], q[PERLANCAR::Retired]]}],
         'Prereqs::EnsureVersion',
         'Prereqs::CheckCircular',
-        'PERLANCAR::CheckPendingRelease',
         'UploadToCPAN::WWWPAUSESimple',
     );
 }
