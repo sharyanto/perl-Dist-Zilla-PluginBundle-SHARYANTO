@@ -51,6 +51,7 @@ sub configure {
         ['Acme::CPANModules::Blacklist' => {module=>[q[PERLANCAR::Avoided], q[PERLANCAR::Retired]]}],
         'Prereqs::EnsureVersion',
         'Prereqs::CheckCircular',
+        'PERLANCAR::CheckPendingRelease',
         'UploadToCPAN::WWWPAUSESimple',
     );
 }
