@@ -3,6 +3,9 @@ package Dist::Zilla::PluginBundle::Author::PERLANCAR::NonCPAN::Task;
 use Moose;
 with 'Dist::Zilla::Role::PluginBundle::Easy';
 
+# AUTHORITY
+# DATE
+# DIST
 # VERSION
 
 use Dist::Zilla::PluginBundle::Filter;
@@ -12,7 +15,7 @@ sub configure {
 
     $self->add_bundle(Filter => {
         -bundle => '@Author::PERLANCAR::Task',
-        -remove => [qw/Authority ConfirmRelease UploadToCPAN/],
+        -remove => [qw/PERLANCAR::Authority ConfirmRelease UploadToCPAN/],
     });
 }
 

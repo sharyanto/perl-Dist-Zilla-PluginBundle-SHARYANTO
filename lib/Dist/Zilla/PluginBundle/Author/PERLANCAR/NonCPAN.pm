@@ -1,6 +1,8 @@
 package Dist::Zilla::PluginBundle::Author::PERLANCAR::NonCPAN;
 
+# AUTHORITY
 # DATE
+# DIST
 # VERSION
 
 use Moose;
@@ -13,7 +15,7 @@ sub configure {
 
     $self->add_bundle(Filter => {
         -bundle => '@Author::PERLANCAR',
-        -remove => [qw/Authority ConfirmRelease UploadToCPAN::WWWPAUSESimple/],
+        -remove => [qw/PERLANCAR::Authority ConfirmRelease UploadToCPAN::WWWPAUSESimple/],
     });
 }
 
@@ -33,7 +35,7 @@ is equivalent to:
 
  [@Filter]
  bundle=@Author::PERLANCAR
- remove=Authority
+ remove=PERLANCAR::Authority
  remove=ConfirmRelease
  remove=UploadToCPAN
 
