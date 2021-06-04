@@ -32,6 +32,7 @@ sub configure {
         'CheckChangeLog',
         'CheckMetaResources',
         'CheckSelfDependency',
+        'Git::Contributors',
         'CopyrightYearFromGit',
         'IfBuilt',
         'MetaJSON',
